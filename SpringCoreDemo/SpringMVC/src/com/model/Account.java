@@ -1,7 +1,15 @@
 package com.model;
 
+
+import org.hibernate.validator.constraints.NotEmpty;
+
+import javax.validation.constraints.Min;
+
 public class Account {
+
+    @Min(value=100)
     private int id;
+    @NotEmpty
     private String name;
 
     public Account(int id, String name, double balance) {
