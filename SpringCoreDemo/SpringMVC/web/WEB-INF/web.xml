@@ -9,18 +9,31 @@
         <welcome-file>/spring/home/</welcome-file>
     </welcome-file-list>
 -->
-
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
+    <!--
+
+        <servlet>
+            <servlet-name>spring</servlet-name>
+            <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        </servlet>
+
+        <servlet-mapping>
+            <servlet-name>spring</servlet-name>
+            <url-pattern>/spring/*</url-pattern>
+        </servlet-mapping>-->
 
     <servlet>
-        <servlet-name>spring</servlet-name>
+        <servlet-name>rest</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>spring</servlet-name>
-        <url-pattern>/spring/*</url-pattern>
+        <servlet-name>rest</servlet-name>
+        <url-pattern>/rest/*</url-pattern>
     </servlet-mapping>
+
+
+
 </web-app>
